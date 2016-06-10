@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\math">
+      <UniqueIdentifier>{22BEDE69-0E21-6E0E-B7A6-A6C4A3E83991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\accelerator">
+      <UniqueIdentifier>{613804CB-CDC3-718F-D6D4-F48342DFCD8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\async">
+      <UniqueIdentifier>{3A78D8B4-A6E2-8C2B-EF20-3ED15BCA6A80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\device">
+      <UniqueIdentifier>{4CE8E755-38A0-29A3-A1A7-02FF8D7EC493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\except">
+      <UniqueIdentifier>{05688A59-F11F-CCA6-5A27-A50246FE6697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\intersection">
+      <UniqueIdentifier>{B3F3E053-9FEC-FFA5-C81E-E52AB476DFB1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kernel">
+      <UniqueIdentifier>{BDE83966-A9A0-7BB3-12A8-540FFE7E16A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kernel\CL">
+      <UniqueIdentifier>{7B5C3967-E71C-B59D-B057-FE1A1CD7F979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kernel\CL\cache">
+      <UniqueIdentifier>{DE5FE28C-4AC1-BF9A-D32E-064D3F8FF659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\primitive">
+      <UniqueIdentifier>{F5D72BF6-6198-A72C-2AD3-F0A99652EC08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\strategy">
+      <UniqueIdentifier>{6F2D2CC0-5B90-BB64-0416-F41AF05787E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\translator">
+      <UniqueIdentifier>{46197BCD-32E7-6ED3-1B7B-DFF907E84A38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{BA5238CF-A61F-93DA-CF38-8182BB64C868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world">
+      <UniqueIdentifier>{C44364B6-30AE-182D-79EC-C9D2E595F681}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\firerays.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\firerays_cl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\bbox.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\float2.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\float3.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\int2.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\mathutils.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\matrix.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\quaternion.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\ray.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\accelerator\bvh.h">
+      <Filter>src\accelerator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\accelerator\hlbvh.h">
+      <Filter>src\accelerator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\async\thread_pool.h">
+      <Filter>src\async</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\calc_holder.h">
+      <Filter>src\device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\calc_intersection_device.h">
+      <Filter>src\device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\calc_intersection_device_cl.h">
+      <Filter>src\device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\intersection_device.h">
+      <Filter>src\device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\except\except.h">
+      <Filter>src\except</Filter>
+    </ClInclude>
+    <ClInclude Include="src\intersection\firerays_impl.h">
+      <Filter>src\intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kernel\CL\cache\kernels.h">
+      <Filter>src\kernel\CL\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="src\primitive\instance.h">
+      <Filter>src\primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="src\primitive\mesh.h">
+      <Filter>src\primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="src\primitive\shapeimpl.h">
+      <Filter>src\primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\bvh2lstrategy.h">
+      <Filter>src\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\bvhstrategy.h">
+      <Filter>src\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\fatbvhstrategy.h">
+      <Filter>src\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\hlbvh_strategy.h">
+      <Filter>src\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\strategy.h">
+      <Filter>src\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\translator\fatnode_bvh_translator.h">
+      <Filter>src\translator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\translator\plain_bvh_translator.h">
+      <Filter>src\translator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\alignedalloc.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\options.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\progressreporter.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\world.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\accelerator\bvh.cpp">
+      <Filter>src\accelerator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\accelerator\hlbvh.cpp">
+      <Filter>src\accelerator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\calc_intersection_device.cpp">
+      <Filter>src\device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\calc_intersection_device_cl.cpp">
+      <Filter>src\device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intersection\firerays.cpp">
+      <Filter>src\intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intersection\firerays_impl.cpp">
+      <Filter>src\intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primitive\mesh.cpp">
+      <Filter>src\primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\bvh2lstrategy.cpp">
+      <Filter>src\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\bvhstrategy.cpp">
+      <Filter>src\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\fatbvhstrategy.cpp">
+      <Filter>src\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\hlbvh_strategy.cpp">
+      <Filter>src\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\translator\fatnode_bvh_translator.cpp">
+      <Filter>src\translator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\translator\plain_bvh_translator.cpp">
+      <Filter>src\translator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\options.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\world.cpp">
+      <Filter>src\world</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\kernel\CL\bvh.cl">
+      <Filter>src\kernel\CL</Filter>
+    </None>
+    <None Include="src\kernel\CL\bvh2l.cl">
+      <Filter>src\kernel\CL</Filter>
+    </None>
+    <None Include="src\kernel\CL\common.cl">
+      <Filter>src\kernel\CL</Filter>
+    </None>
+    <None Include="src\kernel\CL\fatbvh.cl">
+      <Filter>src\kernel\CL</Filter>
+    </None>
+    <None Include="src\kernel\CL\grid.cl">
+      <Filter>src\kernel\CL</Filter>
+    </None>
+    <None Include="src\kernel\CL\hlbvh.cl">
+      <Filter>src\kernel\CL</Filter>
+    </None>
+    <None Include="src\kernel\CL\hlbvh_build.cl">
+      <Filter>src\kernel\CL</Filter>
+    </None>
+    <None Include="src\kernel\CL\qbvh.cl">
+      <Filter>src\kernel\CL</Filter>
+    </None>
+  </ItemGroup>
+</Project>

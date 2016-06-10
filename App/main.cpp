@@ -84,8 +84,8 @@ GLuint g_vertex_buffer;
 GLuint g_index_buffer;
 GLuint g_texture;
 
-int g_window_width = 640;
-int g_window_height = 480;
+int g_window_width = 800;
+int g_window_height = 600;
 int g_num_shadow_rays = 1;
 int g_num_ao_rays = 1;
 int g_ao_enabled = false;

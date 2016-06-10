@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0AD194B9-F69D-EFC4-1FB7-DD6C0BE32453}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FireRays</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Bin\Debug\x86\</OutDir>
+    <IntDir>obj\x32\Debug\</IntDir>
+    <TargetName>FireRaysD</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Bin\Debug\x64\</OutDir>
+    <IntDir>obj\x64\Debug\</IntDir>
+    <TargetName>FireRays64D</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Bin\Release\x86\</OutDir>
+    <IntDir>obj\x32\Release\</IntDir>
+    <TargetName>FireRays</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Bin\Release\x64\</OutDir>
+    <IntDir>obj\x64\Release\</IntDir>
+    <TargetName>FireRays64</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;EXPORT_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\3rdParty\include;include;..\CLW;..\Calc\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>..\Bin\Debug\x86\FireRaysD.lib</ImportLibrary>
+      <AdditionalOptions>-Wl,--no-undefined %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;EXPORT_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\3rdParty\include;include;..\CLW;..\Calc\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>..\Bin\Debug\x64\FireRays64D.lib</ImportLibrary>
+      <AdditionalOptions>-Wl,--no-undefined %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\CL\OpenCL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;EXPORT_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\3rdParty\include;include;..\CLW;..\Calc\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>..\Bin\Release\x86\FireRays.lib</ImportLibrary>
+      <AdditionalOptions>-Wl,--no-undefined %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;EXPORT_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\3rdParty\include;include;..\CLW;..\Calc\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>..\Bin\Release\x64\FireRays64.lib</ImportLibrary>
+      <AdditionalOptions>-Wl,--no-undefined %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\CL\OpenCL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\firerays.h" />
+    <ClInclude Include="include\firerays_cl.h" />
+    <ClInclude Include="include\math\bbox.h" />
+    <ClInclude Include="include\math\float2.h" />
+    <ClInclude Include="include\math\float3.h" />
+    <ClInclude Include="include\math\int2.h" />
+    <ClInclude Include="include\math\mathutils.h" />
+    <ClInclude Include="include\math\matrix.h" />
+    <ClInclude Include="include\math\quaternion.h" />
+    <ClInclude Include="include\math\ray.h" />
+    <ClInclude Include="src\accelerator\bvh.h" />
+    <ClInclude Include="src\accelerator\hlbvh.h" />
+    <ClInclude Include="src\async\thread_pool.h" />
+    <ClInclude Include="src\device\calc_holder.h" />
+    <ClInclude Include="src\device\calc_intersection_device.h" />
+    <ClInclude Include="src\device\calc_intersection_device_cl.h" />
+    <ClInclude Include="src\device\intersection_device.h" />
+    <ClInclude Include="src\except\except.h" />
+    <ClInclude Include="src\intersection\firerays_impl.h" />
+    <ClInclude Include="src\kernel\CL\cache\kernels.h" />
+    <ClInclude Include="src\primitive\instance.h" />
+    <ClInclude Include="src\primitive\mesh.h" />
+    <ClInclude Include="src\primitive\shapeimpl.h" />
+    <ClInclude Include="src\strategy\bvh2lstrategy.h" />
+    <ClInclude Include="src\strategy\bvhstrategy.h" />
+    <ClInclude Include="src\strategy\fatbvhstrategy.h" />
+    <ClInclude Include="src\strategy\hlbvh_strategy.h" />
+    <ClInclude Include="src\strategy\strategy.h" />
+    <ClInclude Include="src\translator\fatnode_bvh_translator.h" />
+    <ClInclude Include="src\translator\plain_bvh_translator.h" />
+    <ClInclude Include="src\util\alignedalloc.h" />
+    <ClInclude Include="src\util\options.h" />
+    <ClInclude Include="src\util\progressreporter.h" />
+    <ClInclude Include="src\world\world.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\accelerator\bvh.cpp" />
+    <ClCompile Include="src\accelerator\hlbvh.cpp" />
+    <ClCompile Include="src\device\calc_intersection_device.cpp" />
+    <ClCompile Include="src\device\calc_intersection_device_cl.cpp" />
+    <ClCompile Include="src\intersection\firerays.cpp" />
+    <ClCompile Include="src\intersection\firerays_impl.cpp" />
+    <ClCompile Include="src\primitive\mesh.cpp" />
+    <ClCompile Include="src\strategy\bvh2lstrategy.cpp" />
+    <ClCompile Include="src\strategy\bvhstrategy.cpp" />
+    <ClCompile Include="src\strategy\fatbvhstrategy.cpp" />
+    <ClCompile Include="src\strategy\hlbvh_strategy.cpp" />
+    <ClCompile Include="src\translator\fatnode_bvh_translator.cpp" />
+    <ClCompile Include="src\translator\plain_bvh_translator.cpp" />
+    <ClCompile Include="src\util\options.cpp" />
+    <ClCompile Include="src\world\world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\kernel\CL\bvh.cl" />
+    <None Include="src\kernel\CL\bvh2l.cl" />
+    <None Include="src\kernel\CL\common.cl" />
+    <None Include="src\kernel\CL\fatbvh.cl" />
+    <None Include="src\kernel\CL\grid.cl" />
+    <None Include="src\kernel\CL\hlbvh.cl" />
+    <None Include="src\kernel\CL\hlbvh_build.cl" />
+    <None Include="src\kernel\CL\qbvh.cl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calc\Calc.vcxproj">
+      <Project>{D877837C-C4AE-840D-6D9B-6A1059B1000F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\CLW\CLW.vcxproj">
+      <Project>{0BDA870B-77E3-877C-005F-9E7C6C67937C}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
